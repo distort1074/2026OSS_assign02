@@ -3,24 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Style 1</title>
+  <title>Stylesheet 1</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      color: #000;
       background-color: white;
+      color: #222;
+      margin: 20px;
     }
 
-    h1 {
+    #nav {
+      margin-bottom: 20px;
+    }
+
+    #nav a {
+      color: #04AA6D;
+    }
+
+    #top {
       background-color: #04AA6D;
       color: white;
+      padding: 20px;
+    }
+
+    #top h1 {
+      margin: 0;
+    }
+
+    #wrapper {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    #menubar {
+      width: 180px;
+    }
+
+    #menubar ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    #menubar li {
+      display: block;
+      background-color: #eeeeee;
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    #menubar a {
+      color: #04AA6D;
+    }
+
+    #main {
+      width: 60%;
+    }
+
+    #main h2 {
+      color: #04AA6D;
+    }
+
+    #sidebar {
+      width: 200px;
+      background-color: #e8f5e9;
+      border: 1px solid #04AA6D;
       padding: 15px;
     }
 
-    div {
-      margin-bottom: 20px;
+    #bottom {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #cccccc;
     }
 
     a {
@@ -31,35 +87,69 @@
 
 <body>
 
-  <div>
+  <div id="nav">
+    <a href="style1.html">Style 1</a> |
+    <a href="style2.html">Style 2</a> |
+    <a href="nostyle.html">No Style</a> |
+    <a href="index.html">Home</a>
+  </div>
+
+  <div id="top">
     <h1>Welcome to Baesan's Homepage (22300344)</h1>
-
-    <p>
-      안녕하세요. 오픈소스 스튜디오 HTML & CSS 실습 페이지입니다.
-    </p>
+    <p>Use the menu to select different Stylesheets</p>
   </div>
 
-  <div>
-    <h2>About Me</h2>
+  <div id="wrapper">
 
-    <p>
-      영상, 음향, 조명과 웹 기술에 관심이 있습니다.
-    </p>
+    <div id="menubar">
+      <ul>
+        <li><a href="style1.html">Stylesheet 1</a></li>
+        <li><a href="style2.html">Stylesheet 2</a></li>
+        <li>Stylesheet 3</li>
+        <li>Stylesheet 4</li>
+        <li><a href="nostyle.html">No Stylesheet</a></li>
+      </ul>
+    </div>
 
-    <h3>My Interests</h3>
+    <div id="main">
+      <h2>Same Page Different Stylesheets</h2>
 
-    <ul>
-      <li>Web Development</li>
-      <li>Live Streaming</li>
-      <li>Audio & Lighting</li>
-    </ul>
+      <p>
+        This is a demonstration of how different stylesheets can change
+        the layout of an HTML page.
+      </p>
+
+      <p>
+        Select Stylesheet 1 or Stylesheet 2 to see the difference.
+      </p>
+
+      <p>
+        <a href="style1.html">Stylesheet 1</a>
+        <a href="style2.html">Stylesheet 2</a>
+      </p>
+
+      <h2>No Styles</h2>
+
+      <p>
+        This page uses the same HTML structure with a different CSS style.
+      </p>
+
+      <a href="nostyle.html">No Stylesheet</a>
+    </div>
+
+    <div id="sidebar">
+      <h3>Side-Bar</h3>
+
+      <p>
+        Name: Baesan<br>
+        Student ID: 22300344
+      </p>
+    </div>
+
   </div>
 
-  <div>
-    <h2>Useful Links</h2>
-
-    <a href="http://w3schools.com/css/demo_default.htm" target="_blank">W3Schools</a>
-    <br><br>
+  <div id="bottom">
+    <p>Open Source Studio - Assignment 02</p>
     <a href="index.html">Home</a>
   </div>
 
